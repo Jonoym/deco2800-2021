@@ -32,7 +32,7 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
           restore-keys: ${{ runner.os }}-gradle
 
-      - name: Build and Analyse Game
+      - name: Build and Analyse Game # 
         run: |
           cd $GRADLE_DIR
           chmod +x ./gradlew
