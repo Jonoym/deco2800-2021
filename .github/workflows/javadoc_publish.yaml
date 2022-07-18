@@ -7,7 +7,7 @@ on:
       # Push events on main branch
       - main
 
-jobs:
+jobs: #
   build_and_publish_jdoc:
     runs-on: ubuntu-latest
     steps:
