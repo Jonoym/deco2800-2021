@@ -99,7 +99,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true" title="class or interface in com.badlogic.gdx.input" class="externalLink">GestureDetector.GestureListener</a></code>, <code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true" title="class or interface in com.badlogic.gdx" class="externalLink">InputProcessor</a></code></dd>
+<dd><code>com.badlogic.gdx.input.GestureDetector.GestureListener</code>, <code>com.badlogic.gdx.InputProcessor</code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -108,7 +108,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public abstract class <span class="typeNameLabel">InputComponent</span>
 extends <a href="../components/Component.html" title="class in com.deco2800.game.components">Component</a>
-implements <a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true" title="class or interface in com.badlogic.gdx" class="externalLink">InputProcessor</a>, <a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true" title="class or interface in com.badlogic.gdx.input" class="externalLink">GestureDetector.GestureListener</a></pre>
+implements com.badlogic.gdx.InputProcessor, com.badlogic.gdx.input.GestureDetector.GestureListener</pre>
 <div class="block">An InputComponent that supports keyboard and touch input and touch gestures. By default an
  InputComponent does not handle any input events.
 
@@ -276,10 +276,10 @@ int&nbsp;button)</code></th>
 </tr>
 <tr class="rowColor" id="i11">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pinch(com.badlogic.gdx.math.Vector2,com.badlogic.gdx.math.Vector2,com.badlogic.gdx.math.Vector2,com.badlogic.gdx.math.Vector2)">pinch</a></span>&#8203;(<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;initialPointer1,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;initialPointer2,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;pointer1,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;pointer2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pinch(com.badlogic.gdx.math.Vector2,com.badlogic.gdx.math.Vector2,com.badlogic.gdx.math.Vector2,com.badlogic.gdx.math.Vector2)">pinch</a></span>&#8203;(com.badlogic.gdx.math.Vector2&nbsp;initialPointer1,
+com.badlogic.gdx.math.Vector2&nbsp;initialPointer2,
+com.badlogic.gdx.math.Vector2&nbsp;pointer1,
+com.badlogic.gdx.math.Vector2&nbsp;pointer2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i12">
@@ -465,9 +465,9 @@ float&nbsp;distance)</code></th>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">keyDown</span>&#8203;(<span class="arguments">int&nbsp;keycode)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true#keyDown(int)" title="class or interface in com.badlogic.gdx" class="externalLink">keyDown</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true" title="class or interface in com.badlogic.gdx" class="externalLink">InputProcessor</a></code></dd>
+<dd><code>keyDown</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.InputProcessor</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true#keyDown(int)" title="class or interface in com.badlogic.gdx" class="externalLink"><code>InputProcessor.keyDown(int)</code></a></dd>
+<dd><code>InputProcessor.keyDown(int)</code></dd>
 </dl>
 </section>
 </li>
@@ -477,9 +477,9 @@ float&nbsp;distance)</code></th>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">keyTyped</span>&#8203;(<span class="arguments">char&nbsp;character)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true#keyTyped(char)" title="class or interface in com.badlogic.gdx" class="externalLink">keyTyped</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true" title="class or interface in com.badlogic.gdx" class="externalLink">InputProcessor</a></code></dd>
+<dd><code>keyTyped</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.InputProcessor</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true#keyTyped(char)" title="class or interface in com.badlogic.gdx" class="externalLink"><code>InputProcessor.keyTyped(char)</code></a></dd>
+<dd><code>InputProcessor.keyTyped(char)</code></dd>
 </dl>
 </section>
 </li>
@@ -489,9 +489,9 @@ float&nbsp;distance)</code></th>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">keyUp</span>&#8203;(<span class="arguments">int&nbsp;keycode)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true#keyUp(int)" title="class or interface in com.badlogic.gdx" class="externalLink">keyUp</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true" title="class or interface in com.badlogic.gdx" class="externalLink">InputProcessor</a></code></dd>
+<dd><code>keyUp</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.InputProcessor</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true#keyUp(int)" title="class or interface in com.badlogic.gdx" class="externalLink"><code>InputProcessor.keyUp(int)</code></a></dd>
+<dd><code>InputProcessor.keyUp(int)</code></dd>
 </dl>
 </section>
 </li>
@@ -502,9 +502,9 @@ float&nbsp;distance)</code></th>
 int&nbsp;screenY)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true#mouseMoved(int,int)" title="class or interface in com.badlogic.gdx" class="externalLink">mouseMoved</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true" title="class or interface in com.badlogic.gdx" class="externalLink">InputProcessor</a></code></dd>
+<dd><code>mouseMoved</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.InputProcessor</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true#mouseMoved(int,int)" title="class or interface in com.badlogic.gdx" class="externalLink"><code>InputProcessor.mouseMoved(int, int)</code></a></dd>
+<dd><code>InputProcessor.mouseMoved(int, int)</code></dd>
 </dl>
 </section>
 </li>
@@ -515,9 +515,9 @@ int&nbsp;screenY)</span></div>
 float&nbsp;amountY)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true#scrolled(float,float)" title="class or interface in com.badlogic.gdx" class="externalLink">scrolled</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true" title="class or interface in com.badlogic.gdx" class="externalLink">InputProcessor</a></code></dd>
+<dd><code>scrolled</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.InputProcessor</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true#scrolled(float,float)" title="class or interface in com.badlogic.gdx" class="externalLink"><code>InputProcessor.scrolled(float, float)</code></a></dd>
+<dd><code>InputProcessor.scrolled(float, float)</code></dd>
 </dl>
 </section>
 </li>
@@ -530,9 +530,9 @@ int&nbsp;pointer,
 int&nbsp;button)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true#touchDown(int,int,int,int)" title="class or interface in com.badlogic.gdx" class="externalLink">touchDown</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true" title="class or interface in com.badlogic.gdx" class="externalLink">InputProcessor</a></code></dd>
+<dd><code>touchDown</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.InputProcessor</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true#touchDown(int,int,int,int)" title="class or interface in com.badlogic.gdx" class="externalLink"><code>InputProcessor.touchDown(int, int, int, int)</code></a></dd>
+<dd><code>InputProcessor.touchDown(int, int, int, int)</code></dd>
 </dl>
 </section>
 </li>
@@ -544,9 +544,9 @@ int&nbsp;screenY,
 int&nbsp;pointer)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true#touchDragged(int,int,int)" title="class or interface in com.badlogic.gdx" class="externalLink">touchDragged</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true" title="class or interface in com.badlogic.gdx" class="externalLink">InputProcessor</a></code></dd>
+<dd><code>touchDragged</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.InputProcessor</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true#touchDragged(int,int,int)" title="class or interface in com.badlogic.gdx" class="externalLink"><code>InputProcessor.touchDragged(int, int, int)</code></a></dd>
+<dd><code>InputProcessor.touchDragged(int, int, int)</code></dd>
 </dl>
 </section>
 </li>
@@ -559,9 +559,9 @@ int&nbsp;pointer,
 int&nbsp;button)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true#touchUp(int,int,int,int)" title="class or interface in com.badlogic.gdx" class="externalLink">touchUp</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true" title="class or interface in com.badlogic.gdx" class="externalLink">InputProcessor</a></code></dd>
+<dd><code>touchUp</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.InputProcessor</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/InputProcessor.html?is-external=true#touchUp(int,int,int,int)" title="class or interface in com.badlogic.gdx" class="externalLink"><code>InputProcessor.touchUp(int, int, int, int)</code></a></dd>
+<dd><code>InputProcessor.touchUp(int, int, int, int)</code></dd>
 </dl>
 </section>
 </li>
@@ -573,9 +573,9 @@ float&nbsp;velocityY,
 int&nbsp;button)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true#fling(float,float,int)" title="class or interface in com.badlogic.gdx.input" class="externalLink">fling</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true" title="class or interface in com.badlogic.gdx.input" class="externalLink">GestureDetector.GestureListener</a></code></dd>
+<dd><code>fling</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.input.GestureDetector.GestureListener</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true#fling(float,float,int)" title="class or interface in com.badlogic.gdx.input" class="externalLink"><code>GestureDetector.GestureListener.fling(float, float, int)</code></a></dd>
+<dd><code>GestureDetector.GestureListener.fling(float, float, int)</code></dd>
 </dl>
 </section>
 </li>
@@ -586,9 +586,9 @@ int&nbsp;button)</span></div>
 float&nbsp;y)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true#longPress(float,float)" title="class or interface in com.badlogic.gdx.input" class="externalLink">longPress</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true" title="class or interface in com.badlogic.gdx.input" class="externalLink">GestureDetector.GestureListener</a></code></dd>
+<dd><code>longPress</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.input.GestureDetector.GestureListener</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true#longPress(float,float)" title="class or interface in com.badlogic.gdx.input" class="externalLink"><code>GestureDetector.GestureListener.longPress(float, float)</code></a></dd>
+<dd><code>GestureDetector.GestureListener.longPress(float, float)</code></dd>
 </dl>
 </section>
 </li>
@@ -601,9 +601,9 @@ float&nbsp;deltaX,
 float&nbsp;deltaY)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true#pan(float,float,float,float)" title="class or interface in com.badlogic.gdx.input" class="externalLink">pan</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true" title="class or interface in com.badlogic.gdx.input" class="externalLink">GestureDetector.GestureListener</a></code></dd>
+<dd><code>pan</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.input.GestureDetector.GestureListener</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true#pan(float,float,float,float)" title="class or interface in com.badlogic.gdx.input" class="externalLink"><code>GestureDetector.GestureListener.pan(float, float, float, float)</code></a></dd>
+<dd><code>GestureDetector.GestureListener.pan(float, float, float, float)</code></dd>
 </dl>
 </section>
 </li>
@@ -616,24 +616,24 @@ int&nbsp;pointer,
 int&nbsp;button)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true#panStop(float,float,int,int)" title="class or interface in com.badlogic.gdx.input" class="externalLink">panStop</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true" title="class or interface in com.badlogic.gdx.input" class="externalLink">GestureDetector.GestureListener</a></code></dd>
+<dd><code>panStop</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.input.GestureDetector.GestureListener</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true#panStop(float,float,int,int)" title="class or interface in com.badlogic.gdx.input" class="externalLink"><code>GestureDetector.GestureListener.panStop(float, float, int, int)</code></a></dd>
+<dd><code>GestureDetector.GestureListener.panStop(float, float, int, int)</code></dd>
 </dl>
 </section>
 </li>
 <li class="blockList">
 <section class="detail">
 <h3><a id="pinch(com.badlogic.gdx.math.Vector2,com.badlogic.gdx.math.Vector2,com.badlogic.gdx.math.Vector2,com.badlogic.gdx.math.Vector2)">pinch</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">pinch</span>&#8203;(<span class="arguments"><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;initialPointer1,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;initialPointer2,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;pointer1,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;pointer2)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">pinch</span>&#8203;(<span class="arguments">com.badlogic.gdx.math.Vector2&nbsp;initialPointer1,
+com.badlogic.gdx.math.Vector2&nbsp;initialPointer2,
+com.badlogic.gdx.math.Vector2&nbsp;pointer1,
+com.badlogic.gdx.math.Vector2&nbsp;pointer2)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true#pinch(com.badlogic.gdx.math.Vector2,com.badlogic.gdx.math.Vector2,com.badlogic.gdx.math.Vector2,com.badlogic.gdx.math.Vector2)" title="class or interface in com.badlogic.gdx.input" class="externalLink">pinch</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true" title="class or interface in com.badlogic.gdx.input" class="externalLink">GestureDetector.GestureListener</a></code></dd>
+<dd><code>pinch</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.input.GestureDetector.GestureListener</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true#pinch(com.badlogic.gdx.math.Vector2,com.badlogic.gdx.math.Vector2,com.badlogic.gdx.math.Vector2,com.badlogic.gdx.math.Vector2)" title="class or interface in com.badlogic.gdx.input" class="externalLink"><code>GestureDetector.GestureListener.pinch(Vector2, Vector2, Vector2, Vector2)</code></a></dd>
+<dd><code>GestureDetector.GestureListener.pinch(Vector2, Vector2, Vector2, Vector2)</code></dd>
 </dl>
 </section>
 </li>
@@ -643,9 +643,9 @@ int&nbsp;button)</span></div>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">pinchStop</span>()</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true#pinchStop()" title="class or interface in com.badlogic.gdx.input" class="externalLink">pinchStop</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true" title="class or interface in com.badlogic.gdx.input" class="externalLink">GestureDetector.GestureListener</a></code></dd>
+<dd><code>pinchStop</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.input.GestureDetector.GestureListener</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true#pinchStop()" title="class or interface in com.badlogic.gdx.input" class="externalLink"><code>GestureDetector.GestureListener.pinchStop()</code></a></dd>
+<dd><code>GestureDetector.GestureListener.pinchStop()</code></dd>
 </dl>
 </section>
 </li>
@@ -670,9 +670,9 @@ int&nbsp;count,
 int&nbsp;button)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true#tap(float,float,int,int)" title="class or interface in com.badlogic.gdx.input" class="externalLink">tap</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true" title="class or interface in com.badlogic.gdx.input" class="externalLink">GestureDetector.GestureListener</a></code></dd>
+<dd><code>tap</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.input.GestureDetector.GestureListener</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true#tap(float,float,int,int)" title="class or interface in com.badlogic.gdx.input" class="externalLink"><code>GestureDetector.GestureListener.tap(float, float, int, int)</code></a></dd>
+<dd><code>GestureDetector.GestureListener.tap(float, float, int, int)</code></dd>
 </dl>
 </section>
 </li>
@@ -685,9 +685,9 @@ int&nbsp;pointer,
 int&nbsp;button)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true#touchDown(float,float,int,int)" title="class or interface in com.badlogic.gdx.input" class="externalLink">touchDown</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true" title="class or interface in com.badlogic.gdx.input" class="externalLink">GestureDetector.GestureListener</a></code></dd>
+<dd><code>touchDown</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.input.GestureDetector.GestureListener</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true#touchDown(float,float,int,int)" title="class or interface in com.badlogic.gdx.input" class="externalLink"><code>GestureDetector.GestureListener.touchDown(float, float, int, int)</code></a></dd>
+<dd><code>GestureDetector.GestureListener.touchDown(float, float, int, int)</code></dd>
 </dl>
 </section>
 </li>
@@ -698,9 +698,9 @@ int&nbsp;button)</span></div>
 float&nbsp;distance)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true#zoom(float,float)" title="class or interface in com.badlogic.gdx.input" class="externalLink">zoom</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true" title="class or interface in com.badlogic.gdx.input" class="externalLink">GestureDetector.GestureListener</a></code></dd>
+<dd><code>zoom</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.input.GestureDetector.GestureListener</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/input/GestureDetector.GestureListener.html?is-external=true#zoom(float,float)" title="class or interface in com.badlogic.gdx.input" class="externalLink"><code>GestureDetector.GestureListener.zoom(float, float)</code></a></dd>
+<dd><code>GestureDetector.GestureListener.zoom(float, float)</code></dd>
 </dl>
 </section>
 </li>

@@ -97,18 +97,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/ContactListener.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">ContactListener</a></code></dd>
+<dd><code>com.badlogic.gdx.physics.box2d.ContactListener</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">PhysicsContactListener</span>
 extends java.lang.Object
-implements <a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/ContactListener.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">ContactListener</a></pre>
+implements com.badlogic.gdx.physics.box2d.ContactListener</pre>
 <div class="block">Box2D collision events fire globally on the physics world, not per-object. The contact listener
  receives these events, finds the entities involved in the collision, and triggers events on them.
 
- <p>On contact start: evt = "collisionStart", params = (<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Fixture.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink"><code>Fixture</code></a> thisFixture, <a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Fixture.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink"><code>Fixture</code></a> otherFixture)
+ <p>On contact start: evt = "collisionStart", params = (<code>Fixture</code> thisFixture, <code>Fixture</code> otherFixture)
 
- <p>On contact end: evt = "collisionEnd", params = (<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Fixture.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink"><code>Fixture</code></a> thisFixture, <a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Fixture.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink"><code>Fixture</code></a>
+ <p>On contact end: evt = "collisionEnd", params = (<code>Fixture</code> thisFixture, <code>Fixture</code>
  otherFixture)</div>
 </section>
 <section class="summary">
@@ -158,24 +158,24 @@ implements <a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/b
 <tbody>
 <tr class="altColor" id="i0">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#beginContact(com.badlogic.gdx.physics.box2d.Contact)">beginContact</a></span>&#8203;(<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Contact.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Contact</a>&nbsp;contact)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#beginContact(com.badlogic.gdx.physics.box2d.Contact)">beginContact</a></span>&#8203;(com.badlogic.gdx.physics.box2d.Contact&nbsp;contact)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i1">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#endContact(com.badlogic.gdx.physics.box2d.Contact)">endContact</a></span>&#8203;(<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Contact.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Contact</a>&nbsp;contact)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#endContact(com.badlogic.gdx.physics.box2d.Contact)">endContact</a></span>&#8203;(com.badlogic.gdx.physics.box2d.Contact&nbsp;contact)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i2">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#postSolve(com.badlogic.gdx.physics.box2d.Contact,com.badlogic.gdx.physics.box2d.ContactImpulse)">postSolve</a></span>&#8203;(<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Contact.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Contact</a>&nbsp;contact,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/ContactImpulse.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">ContactImpulse</a>&nbsp;impulse)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#postSolve(com.badlogic.gdx.physics.box2d.Contact,com.badlogic.gdx.physics.box2d.ContactImpulse)">postSolve</a></span>&#8203;(com.badlogic.gdx.physics.box2d.Contact&nbsp;contact,
+com.badlogic.gdx.physics.box2d.ContactImpulse&nbsp;impulse)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i3">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#preSolve(com.badlogic.gdx.physics.box2d.Contact,com.badlogic.gdx.physics.box2d.Manifold)">preSolve</a></span>&#8203;(<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Contact.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Contact</a>&nbsp;contact,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Manifold.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Manifold</a>&nbsp;oldManifold)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#preSolve(com.badlogic.gdx.physics.box2d.Contact,com.badlogic.gdx.physics.box2d.Manifold)">preSolve</a></span>&#8203;(com.badlogic.gdx.physics.box2d.Contact&nbsp;contact,
+com.badlogic.gdx.physics.box2d.Manifold&nbsp;oldManifold)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -219,42 +219,42 @@ implements <a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/b
 <li class="blockList">
 <section class="detail">
 <h3><a id="beginContact(com.badlogic.gdx.physics.box2d.Contact)">beginContact</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">beginContact</span>&#8203;(<span class="arguments"><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Contact.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Contact</a>&nbsp;contact)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">beginContact</span>&#8203;(<span class="arguments">com.badlogic.gdx.physics.box2d.Contact&nbsp;contact)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/ContactListener.html?is-external=true#beginContact(com.badlogic.gdx.physics.box2d.Contact)" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">beginContact</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/ContactListener.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">ContactListener</a></code></dd>
+<dd><code>beginContact</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.physics.box2d.ContactListener</code></dd>
 </dl>
 </section>
 </li>
 <li class="blockList">
 <section class="detail">
 <h3><a id="endContact(com.badlogic.gdx.physics.box2d.Contact)">endContact</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">endContact</span>&#8203;(<span class="arguments"><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Contact.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Contact</a>&nbsp;contact)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">endContact</span>&#8203;(<span class="arguments">com.badlogic.gdx.physics.box2d.Contact&nbsp;contact)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/ContactListener.html?is-external=true#endContact(com.badlogic.gdx.physics.box2d.Contact)" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">endContact</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/ContactListener.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">ContactListener</a></code></dd>
+<dd><code>endContact</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.physics.box2d.ContactListener</code></dd>
 </dl>
 </section>
 </li>
 <li class="blockList">
 <section class="detail">
 <h3><a id="preSolve(com.badlogic.gdx.physics.box2d.Contact,com.badlogic.gdx.physics.box2d.Manifold)">preSolve</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">preSolve</span>&#8203;(<span class="arguments"><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Contact.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Contact</a>&nbsp;contact,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Manifold.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Manifold</a>&nbsp;oldManifold)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">preSolve</span>&#8203;(<span class="arguments">com.badlogic.gdx.physics.box2d.Contact&nbsp;contact,
+com.badlogic.gdx.physics.box2d.Manifold&nbsp;oldManifold)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/ContactListener.html?is-external=true#preSolve(com.badlogic.gdx.physics.box2d.Contact,com.badlogic.gdx.physics.box2d.Manifold)" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">preSolve</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/ContactListener.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">ContactListener</a></code></dd>
+<dd><code>preSolve</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.physics.box2d.ContactListener</code></dd>
 </dl>
 </section>
 </li>
 <li class="blockList">
 <section class="detail">
 <h3><a id="postSolve(com.badlogic.gdx.physics.box2d.Contact,com.badlogic.gdx.physics.box2d.ContactImpulse)">postSolve</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">postSolve</span>&#8203;(<span class="arguments"><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Contact.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Contact</a>&nbsp;contact,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/ContactImpulse.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">ContactImpulse</a>&nbsp;impulse)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">postSolve</span>&#8203;(<span class="arguments">com.badlogic.gdx.physics.box2d.Contact&nbsp;contact,
+com.badlogic.gdx.physics.box2d.ContactImpulse&nbsp;impulse)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/ContactListener.html?is-external=true#postSolve(com.badlogic.gdx.physics.box2d.Contact,com.badlogic.gdx.physics.box2d.ContactImpulse)" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">postSolve</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/ContactListener.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">ContactListener</a></code></dd>
+<dd><code>postSolve</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.physics.box2d.ContactListener</code></dd>
 </dl>
 </section>
 </li>

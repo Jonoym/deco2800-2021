@@ -101,7 +101,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/utils/Disposable.html?is-external=true" title="class or interface in com.badlogic.gdx.utils" class="externalLink">Disposable</a></code>, <code><a href="Renderable.html" title="interface in com.deco2800.game.rendering">Renderable</a></code>, <code>java.lang.Comparable&lt;<a href="Renderable.html" title="interface in com.deco2800.game.rendering">Renderable</a>&gt;</code></dd>
+<dd><code>com.badlogic.gdx.utils.Disposable</code>, <code><a href="Renderable.html" title="interface in com.deco2800.game.rendering">Renderable</a></code>, <code>java.lang.Comparable&lt;<a href="Renderable.html" title="interface in com.deco2800.game.rendering">Renderable</a>&gt;</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">TextureRenderComponent</span>
@@ -140,11 +140,11 @@ extends <a href="RenderComponent.html" title="class in com.deco2800.game.renderi
 </thead>
 <tbody>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.badlogic.gdx.graphics.g2d.Sprite)">TextureRenderComponent</a></span>&#8203;(<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/g2d/Sprite.html?is-external=true" title="class or interface in com.badlogic.gdx.graphics.g2d" class="externalLink">Sprite</a>&nbsp;sprite)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.badlogic.gdx.graphics.g2d.Sprite)">TextureRenderComponent</a></span>&#8203;(com.badlogic.gdx.graphics.g2d.Sprite&nbsp;sprite)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.badlogic.gdx.graphics.Texture)">TextureRenderComponent</a></span>&#8203;(<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/Texture.html?is-external=true" title="class or interface in com.badlogic.gdx.graphics" class="externalLink">Texture</a>&nbsp;texture)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.badlogic.gdx.graphics.Texture)">TextureRenderComponent</a></span>&#8203;(com.badlogic.gdx.graphics.Texture&nbsp;texture)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -176,13 +176,13 @@ extends <a href="RenderComponent.html" title="class in com.deco2800.game.renderi
 <tbody>
 <tr class="altColor" id="i0">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#draw(com.badlogic.gdx.graphics.g2d.SpriteBatch)">draw</a></span>&#8203;(<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/g2d/SpriteBatch.html?is-external=true" title="class or interface in com.badlogic.gdx.graphics.g2d" class="externalLink">SpriteBatch</a>&nbsp;batch)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#draw(com.badlogic.gdx.graphics.g2d.SpriteBatch)">draw</a></span>&#8203;(com.badlogic.gdx.graphics.g2d.SpriteBatch&nbsp;batch)</code></th>
 <td class="colLast">
 <div class="block">draw the image</div>
 </td>
 </tr>
 <tr class="rowColor" id="i1">
-<td class="colFirst"><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/g2d/Sprite.html?is-external=true" title="class or interface in com.badlogic.gdx.graphics.g2d" class="externalLink">Sprite</a></code></td>
+<td class="colFirst"><code>com.badlogic.gdx.graphics.g2d.Sprite</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSprite()">getSprite</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -239,7 +239,7 @@ extends <a href="RenderComponent.html" title="class in com.deco2800.game.renderi
 <li class="blockList">
 <section class="detail">
 <h3><a id="&lt;init&gt;(com.badlogic.gdx.graphics.Texture)">TextureRenderComponent</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">TextureRenderComponent</span>&#8203;(<span class="arguments"><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/Texture.html?is-external=true" title="class or interface in com.badlogic.gdx.graphics" class="externalLink">Texture</a>&nbsp;texture)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">TextureRenderComponent</span>&#8203;(<span class="arguments">com.badlogic.gdx.graphics.Texture&nbsp;texture)</span></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>texture</code> - Static texture to render. Will be scaled to the entity's scale.</dd>
@@ -249,7 +249,7 @@ extends <a href="RenderComponent.html" title="class in com.deco2800.game.renderi
 <li class="blockList">
 <section class="detail">
 <h3><a id="&lt;init&gt;(com.badlogic.gdx.graphics.g2d.Sprite)">TextureRenderComponent</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">TextureRenderComponent</span>&#8203;(<span class="arguments"><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/g2d/Sprite.html?is-external=true" title="class or interface in com.badlogic.gdx.graphics.g2d" class="externalLink">Sprite</a>&nbsp;sprite)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">TextureRenderComponent</span>&#8203;(<span class="arguments">com.badlogic.gdx.graphics.g2d.Sprite&nbsp;sprite)</span></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>sprite</code> - Sprite to render,  Will be scaled to the entity's scale.</dd>
@@ -269,7 +269,7 @@ extends <a href="RenderComponent.html" title="class in com.deco2800.game.renderi
 <li class="blockList">
 <section class="detail">
 <h3><a id="getSprite()">getSprite</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/g2d/Sprite.html?is-external=true" title="class or interface in com.badlogic.gdx.graphics.g2d" class="externalLink">Sprite</a></span>&nbsp;<span class="memberName">getSprite</span>()</div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">com.badlogic.gdx.graphics.g2d.Sprite</span>&nbsp;<span class="memberName">getSprite</span>()</div>
 </section>
 </li>
 <li class="blockList">
@@ -282,7 +282,7 @@ extends <a href="RenderComponent.html" title="class in com.deco2800.game.renderi
 <li class="blockList">
 <section class="detail">
 <h3><a id="draw(com.badlogic.gdx.graphics.g2d.SpriteBatch)">draw</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">draw</span>&#8203;(<span class="arguments"><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/g2d/SpriteBatch.html?is-external=true" title="class or interface in com.badlogic.gdx.graphics.g2d" class="externalLink">SpriteBatch</a>&nbsp;batch)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">draw</span>&#8203;(<span class="arguments">com.badlogic.gdx.graphics.g2d.SpriteBatch&nbsp;batch)</span></div>
 <div class="block">draw the image</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>

@@ -99,7 +99,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/utils/Disposable.html?is-external=true" title="class or interface in com.badlogic.gdx.utils" class="externalLink">Disposable</a></code>, <code><a href="Renderable.html" title="interface in com.deco2800.game.rendering">Renderable</a></code>, <code>java.lang.Comparable&lt;<a href="Renderable.html" title="interface in com.deco2800.game.rendering">Renderable</a>&gt;</code></dd>
+<dd><code>com.badlogic.gdx.utils.Disposable</code>, <code><a href="Renderable.html" title="interface in com.deco2800.game.rendering">Renderable</a></code>, <code>java.lang.Comparable&lt;<a href="Renderable.html" title="interface in com.deco2800.game.rendering">Renderable</a>&gt;</code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -108,7 +108,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public abstract class <span class="typeNameLabel">RenderComponent</span>
 extends <a href="../components/Component.html" title="class in com.deco2800.game.components">Component</a>
-implements <a href="Renderable.html" title="interface in com.deco2800.game.rendering">Renderable</a>, <a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/utils/Disposable.html?is-external=true" title="class or interface in com.badlogic.gdx.utils" class="externalLink">Disposable</a></pre>
+implements <a href="Renderable.html" title="interface in com.deco2800.game.rendering">Renderable</a>, com.badlogic.gdx.utils.Disposable</pre>
 <div class="block">A generic component for rendering an entity. Registers itself with the render service in order to
  be rendered each frame. Child classes can implement different kinds of rendering behaviour.</div>
 </section>
@@ -191,7 +191,7 @@ implements <a href="Renderable.html" title="interface in com.deco2800.game.rende
 </tr>
 <tr class="rowColor" id="i3">
 <td class="colFirst"><code>protected abstract void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#draw(com.badlogic.gdx.graphics.g2d.SpriteBatch)">draw</a></span>&#8203;(<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/g2d/SpriteBatch.html?is-external=true" title="class or interface in com.badlogic.gdx.graphics.g2d" class="externalLink">SpriteBatch</a>&nbsp;batch)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#draw(com.badlogic.gdx.graphics.g2d.SpriteBatch)">draw</a></span>&#8203;(com.badlogic.gdx.graphics.g2d.SpriteBatch&nbsp;batch)</code></th>
 <td class="colLast">
 <div class="block">Draw the renderable.</div>
 </td>
@@ -212,7 +212,7 @@ implements <a href="Renderable.html" title="interface in com.deco2800.game.rende
 </tr>
 <tr class="altColor" id="i6">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#render(com.badlogic.gdx.graphics.g2d.SpriteBatch)">render</a></span>&#8203;(<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/g2d/SpriteBatch.html?is-external=true" title="class or interface in com.badlogic.gdx.graphics.g2d" class="externalLink">SpriteBatch</a>&nbsp;batch)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#render(com.badlogic.gdx.graphics.g2d.SpriteBatch)">render</a></span>&#8203;(com.badlogic.gdx.graphics.g2d.SpriteBatch&nbsp;batch)</code></th>
 <td class="colLast">
 <div class="block">Render the renderable.</div>
 </td>
@@ -281,7 +281,7 @@ implements <a href="Renderable.html" title="interface in com.deco2800.game.rende
 <div class="block">Called when the component is disposed. Dispose of any internal resources here.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/utils/Disposable.html?is-external=true#dispose()" title="class or interface in com.badlogic.gdx.utils" class="externalLink">dispose</a></code>&nbsp;in interface&nbsp;<code><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/utils/Disposable.html?is-external=true" title="class or interface in com.badlogic.gdx.utils" class="externalLink">Disposable</a></code></dd>
+<dd><code>dispose</code>&nbsp;in interface&nbsp;<code>com.badlogic.gdx.utils.Disposable</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../components/Component.html#dispose()">dispose</a></code>&nbsp;in class&nbsp;<code><a href="../components/Component.html" title="class in com.deco2800.game.components">Component</a></code></dd>
 </dl>
@@ -290,7 +290,7 @@ implements <a href="Renderable.html" title="interface in com.deco2800.game.rende
 <li class="blockList">
 <section class="detail">
 <h3><a id="render(com.badlogic.gdx.graphics.g2d.SpriteBatch)">render</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">render</span>&#8203;(<span class="arguments"><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/g2d/SpriteBatch.html?is-external=true" title="class or interface in com.badlogic.gdx.graphics.g2d" class="externalLink">SpriteBatch</a>&nbsp;batch)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">render</span>&#8203;(<span class="arguments">com.badlogic.gdx.graphics.g2d.SpriteBatch&nbsp;batch)</span></div>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Renderable.html#render(com.badlogic.gdx.graphics.g2d.SpriteBatch)">Renderable</a></code></span></div>
 <div class="block">Render the renderable. Should be called only by the renderer, not manually.</div>
 <dl>
@@ -342,7 +342,7 @@ implements <a href="Renderable.html" title="interface in com.deco2800.game.rende
 <li class="blockList">
 <section class="detail">
 <h3><a id="draw(com.badlogic.gdx.graphics.g2d.SpriteBatch)">draw</a></h3>
-<div class="memberSignature"><span class="modifiers">protected abstract</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">draw</span>&#8203;(<span class="arguments"><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/graphics/g2d/SpriteBatch.html?is-external=true" title="class or interface in com.badlogic.gdx.graphics.g2d" class="externalLink">SpriteBatch</a>&nbsp;batch)</span></div>
+<div class="memberSignature"><span class="modifiers">protected abstract</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">draw</span>&#8203;(<span class="arguments">com.badlogic.gdx.graphics.g2d.SpriteBatch&nbsp;batch)</span></div>
 <div class="block">Draw the renderable. Should be called only by the renderer, not manually.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

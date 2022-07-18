@@ -121,7 +121,7 @@ extends <a href="../Component.html" title="class in com.deco2800.game.components
 </thead>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>protected java.util.ArrayList&lt;<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Fixture.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Fixture</a>&gt;</code></td>
+<td class="colFirst"><code>protected java.util.ArrayList&lt;com.badlogic.gdx.physics.box2d.Fixture&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#collidingFixtures">collidingFixtures</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -173,7 +173,7 @@ extends <a href="../Component.html" title="class in com.deco2800.game.components
 <tbody>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(short,com.badlogic.gdx.math.Vector2,boolean)">TouchMoveComponent</a></span>&#8203;(short&nbsp;targetLayer,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;direction,
+com.badlogic.gdx.math.Vector2&nbsp;direction,
 boolean&nbsp;repeatable)</code></th>
 <td class="colLast">
 <div class="block">Create a component which attacks entities on collision, without knockback.</div>
@@ -181,7 +181,7 @@ boolean&nbsp;repeatable)</code></th>
 </tr>
 <tr class="rowColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(short,com.badlogic.gdx.math.Vector2,int)">TouchMoveComponent</a></span>&#8203;(short&nbsp;targetLayer,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;direction,
+com.badlogic.gdx.math.Vector2&nbsp;direction,
 int&nbsp;maxRepeats)</code></th>
 <td class="colLast">
 <div class="block">Create a component which attacks entities on collision, without knockback.</div>
@@ -212,8 +212,8 @@ int&nbsp;maxRepeats)</code></th>
 <tbody>
 <tr class="altColor" id="i0">
 <td class="colFirst"><code>protected boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#checkEntities(com.badlogic.gdx.physics.box2d.Fixture,com.badlogic.gdx.physics.box2d.Fixture)">checkEntities</a></span>&#8203;(<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Fixture.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Fixture</a>&nbsp;me,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Fixture.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Fixture</a>&nbsp;other)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#checkEntities(com.badlogic.gdx.physics.box2d.Fixture,com.badlogic.gdx.physics.box2d.Fixture)">checkEntities</a></span>&#8203;(com.badlogic.gdx.physics.box2d.Fixture&nbsp;me,
+com.badlogic.gdx.physics.box2d.Fixture&nbsp;other)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i1">
@@ -225,8 +225,8 @@ int&nbsp;maxRepeats)</code></th>
 </tr>
 <tr class="altColor" id="i2">
 <td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onCollisionStart(com.badlogic.gdx.physics.box2d.Fixture,com.badlogic.gdx.physics.box2d.Fixture)">onCollisionStart</a></span>&#8203;(<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Fixture.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Fixture</a>&nbsp;me,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Fixture.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Fixture</a>&nbsp;other)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onCollisionStart(com.badlogic.gdx.physics.box2d.Fixture,com.badlogic.gdx.physics.box2d.Fixture)">onCollisionStart</a></span>&#8203;(com.badlogic.gdx.physics.box2d.Fixture&nbsp;me,
+com.badlogic.gdx.physics.box2d.Fixture&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">The method that is called once a collision event is triggered.</div>
 </td>
@@ -297,7 +297,7 @@ int&nbsp;maxRepeats)</code></th>
 <li class="blockList">
 <section class="detail">
 <h3><a id="collidingFixtures">collidingFixtures</a></h3>
-<div class="memberSignature"><span class="modifiers">protected</span>&nbsp;<span class="returnType">java.util.ArrayList&lt;<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Fixture.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Fixture</a>&gt;</span>&nbsp;<span class="memberName">collidingFixtures</span></div>
+<div class="memberSignature"><span class="modifiers">protected</span>&nbsp;<span class="returnType">java.util.ArrayList&lt;com.badlogic.gdx.physics.box2d.Fixture&gt;</span>&nbsp;<span class="memberName">collidingFixtures</span></div>
 </section>
 </li>
 </ul>
@@ -314,7 +314,7 @@ int&nbsp;maxRepeats)</code></th>
 <section class="detail">
 <h3><a id="&lt;init&gt;(short,com.badlogic.gdx.math.Vector2,boolean)">TouchMoveComponent</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">TouchMoveComponent</span>&#8203;(<span class="arguments">short&nbsp;targetLayer,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;direction,
+com.badlogic.gdx.math.Vector2&nbsp;direction,
 boolean&nbsp;repeatable)</span></div>
 <div class="block">Create a component which attacks entities on collision, without knockback.</div>
 <dl>
@@ -329,7 +329,7 @@ boolean&nbsp;repeatable)</span></div>
 <section class="detail">
 <h3><a id="&lt;init&gt;(short,com.badlogic.gdx.math.Vector2,int)">TouchMoveComponent</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">TouchMoveComponent</span>&#8203;(<span class="arguments">short&nbsp;targetLayer,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;direction,
+com.badlogic.gdx.math.Vector2&nbsp;direction,
 int&nbsp;maxRepeats)</span></div>
 <div class="block">Create a component which attacks entities on collision, without knockback.</div>
 <dl>
@@ -353,8 +353,8 @@ int&nbsp;maxRepeats)</span></div>
 <li class="blockList">
 <section class="detail">
 <h3><a id="onCollisionStart(com.badlogic.gdx.physics.box2d.Fixture,com.badlogic.gdx.physics.box2d.Fixture)">onCollisionStart</a></h3>
-<div class="memberSignature"><span class="modifiers">protected</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">onCollisionStart</span>&#8203;(<span class="arguments"><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Fixture.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Fixture</a>&nbsp;me,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Fixture.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Fixture</a>&nbsp;other)</span></div>
+<div class="memberSignature"><span class="modifiers">protected</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">onCollisionStart</span>&#8203;(<span class="arguments">com.badlogic.gdx.physics.box2d.Fixture&nbsp;me,
+com.badlogic.gdx.physics.box2d.Fixture&nbsp;other)</span></div>
 <div class="block">The method that is called once a collision event is triggered. The method
  will check that the correct entities are in the collision, if they are not
  then the method will terminate prematurely.
@@ -383,8 +383,8 @@ int&nbsp;maxRepeats)</span></div>
 <li class="blockList">
 <section class="detail">
 <h3><a id="checkEntities(com.badlogic.gdx.physics.box2d.Fixture,com.badlogic.gdx.physics.box2d.Fixture)">checkEntities</a></h3>
-<div class="memberSignature"><span class="modifiers">protected</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">checkEntities</span>&#8203;(<span class="arguments"><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Fixture.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Fixture</a>&nbsp;me,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/physics/box2d/Fixture.html?is-external=true" title="class or interface in com.badlogic.gdx.physics.box2d" class="externalLink">Fixture</a>&nbsp;other)</span></div>
+<div class="memberSignature"><span class="modifiers">protected</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">checkEntities</span>&#8203;(<span class="arguments">com.badlogic.gdx.physics.box2d.Fixture&nbsp;me,
+com.badlogic.gdx.physics.box2d.Fixture&nbsp;other)</span></div>
 </section>
 </li>
 <li class="blockList">

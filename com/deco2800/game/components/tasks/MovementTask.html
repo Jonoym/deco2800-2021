@@ -144,7 +144,7 @@ extends <a href="../../ai/tasks/DefaultTask.html" title="class in com.deco2800.g
 </thead>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a></code></td>
+<td class="colFirst"><code>protected com.badlogic.gdx.math.Vector2</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#target">target</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -175,21 +175,21 @@ extends <a href="../../ai/tasks/DefaultTask.html" title="class in com.deco2800.g
 </thead>
 <tbody>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.badlogic.gdx.math.Vector2)">MovementTask</a></span>&#8203;(<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;target)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.badlogic.gdx.math.Vector2)">MovementTask</a></span>&#8203;(com.badlogic.gdx.math.Vector2&nbsp;target)</code></th>
 <td class="colLast">
 <div class="block">Set the target for the entity - entity will move toward the target</div>
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.badlogic.gdx.math.Vector2,float)">MovementTask</a></span>&#8203;(<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;target,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.badlogic.gdx.math.Vector2,float)">MovementTask</a></span>&#8203;(com.badlogic.gdx.math.Vector2&nbsp;target,
 float&nbsp;stopDistance)</code></th>
 <td class="colLast">
 <div class="block">Move task that take position of the target and the stop distance</div>
 </td>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.badlogic.gdx.math.Vector2,com.badlogic.gdx.math.Vector2)">MovementTask</a></span>&#8203;(<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;target,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;moveSpeed)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.badlogic.gdx.math.Vector2,com.badlogic.gdx.math.Vector2)">MovementTask</a></span>&#8203;(com.badlogic.gdx.math.Vector2&nbsp;target,
+com.badlogic.gdx.math.Vector2&nbsp;moveSpeed)</code></th>
 <td class="colLast">
 <div class="block">Move task that take position of the target and the move speed</div>
 </td>
@@ -241,14 +241,14 @@ float&nbsp;stopDistance)</code></th>
 </tr>
 <tr class="rowColor" id="i3">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setMoveSpeed(com.badlogic.gdx.math.Vector2)">setMoveSpeed</a></span>&#8203;(<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;moveSpeed)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setMoveSpeed(com.badlogic.gdx.math.Vector2)">setMoveSpeed</a></span>&#8203;(com.badlogic.gdx.math.Vector2&nbsp;moveSpeed)</code></th>
 <td class="colLast">
 <div class="block">update the movement speed of the entity, higher move speed, the entity travel at higher fps</div>
 </td>
 </tr>
 <tr class="altColor" id="i4">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTarget(com.badlogic.gdx.math.Vector2)">setTarget</a></span>&#8203;(<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;target)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTarget(com.badlogic.gdx.math.Vector2)">setTarget</a></span>&#8203;(com.badlogic.gdx.math.Vector2&nbsp;target)</code></th>
 <td class="colLast">
 <div class="block">set the target of the entity</div>
 </td>
@@ -304,7 +304,7 @@ float&nbsp;stopDistance)</code></th>
 <li class="blockList">
 <section class="detail">
 <h3><a id="target">target</a></h3>
-<div class="memberSignature"><span class="modifiers">protected</span>&nbsp;<span class="returnType"><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a></span>&nbsp;<span class="memberName">target</span></div>
+<div class="memberSignature"><span class="modifiers">protected</span>&nbsp;<span class="returnType">com.badlogic.gdx.math.Vector2</span>&nbsp;<span class="memberName">target</span></div>
 </section>
 </li>
 </ul>
@@ -320,7 +320,7 @@ float&nbsp;stopDistance)</code></th>
 <li class="blockList">
 <section class="detail">
 <h3><a id="&lt;init&gt;(com.badlogic.gdx.math.Vector2)">MovementTask</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">MovementTask</span>&#8203;(<span class="arguments"><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;target)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">MovementTask</span>&#8203;(<span class="arguments">com.badlogic.gdx.math.Vector2&nbsp;target)</span></div>
 <div class="block">Set the target for the entity - entity will move toward the target</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -331,7 +331,7 @@ float&nbsp;stopDistance)</code></th>
 <li class="blockList">
 <section class="detail">
 <h3><a id="&lt;init&gt;(com.badlogic.gdx.math.Vector2,float)">MovementTask</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">MovementTask</span>&#8203;(<span class="arguments"><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;target,
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">MovementTask</span>&#8203;(<span class="arguments">com.badlogic.gdx.math.Vector2&nbsp;target,
 float&nbsp;stopDistance)</span></div>
 <div class="block">Move task that take position of the target and the stop distance</div>
 <dl>
@@ -344,8 +344,8 @@ float&nbsp;stopDistance)</span></div>
 <li class="blockList">
 <section class="detail">
 <h3><a id="&lt;init&gt;(com.badlogic.gdx.math.Vector2,com.badlogic.gdx.math.Vector2)">MovementTask</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">MovementTask</span>&#8203;(<span class="arguments"><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;target,
-<a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;moveSpeed)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">MovementTask</span>&#8203;(<span class="arguments">com.badlogic.gdx.math.Vector2&nbsp;target,
+com.badlogic.gdx.math.Vector2&nbsp;moveSpeed)</span></div>
 <div class="block">Move task that take position of the target and the move speed</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -393,7 +393,7 @@ float&nbsp;stopDistance)</span></div>
 <li class="blockList">
 <section class="detail">
 <h3><a id="setTarget(com.badlogic.gdx.math.Vector2)">setTarget</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">setTarget</span>&#8203;(<span class="arguments"><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;target)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">setTarget</span>&#8203;(<span class="arguments">com.badlogic.gdx.math.Vector2&nbsp;target)</span></div>
 <div class="block">set the target of the entity</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -404,7 +404,7 @@ float&nbsp;stopDistance)</span></div>
 <li class="blockList">
 <section class="detail">
 <h3><a id="setMoveSpeed(com.badlogic.gdx.math.Vector2)">setMoveSpeed</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">setMoveSpeed</span>&#8203;(<span class="arguments"><a href="https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/math/Vector2.html?is-external=true" title="class or interface in com.badlogic.gdx.math" class="externalLink">Vector2</a>&nbsp;moveSpeed)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">setMoveSpeed</span>&#8203;(<span class="arguments">com.badlogic.gdx.math.Vector2&nbsp;moveSpeed)</span></div>
 <div class="block">update the movement speed of the entity, higher move speed, the entity travel at higher fps</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
